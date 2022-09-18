@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1 - forma de usar css-->
+    <style>
+         /* esto es valido */ 
+         h1{
+         color:rgb(128, 0, 0);
+        font-size: 40px}
+        p{
+            font-weight: bolder ;
+        }
+        .otraClaseConFondoVerde {background-color:green
+    
+}
+section{
+    background-color: yellow;
+}
+#btn {
+    background-color:aqua
+}
+.btn {
+    background-color:aqua
+}
+    </style>
+
+
+<!-- 3 forma: EXTERNo-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+      2-forma
+       aplicar estilo en linea
+    usando el atributo style
+-->
+<section class="sectionPrincipal">
+    <h1 style="color:green"> Css </h1>
+    <h1> Hola </h1>
+    <h2> Sub titulo h2</h2>
+
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni beatae harum mollitia rerum? Hic nesciunt, libero repudiandae ducimus architecto voluptatem eius officia rerum, voluptates non modi ipsam quos, obcaecati deserunt!
+        
+    </p>
+</section>
+
+<section class="otraClaseConFondoVerde">
+    <h1> Hola </h1>
+
+</section>
+<section>
+    <form action="alta.html">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre"
+        type="text"
+        maxlength="50"
+        requerid >
+        <button id="btn">
+            Enviar
+        </button>
+        <button class="btn">
+            Enviar
+        </button>
+        <button class="btn">
+            Enviar2
+        </button>
+
+    </form>
+
+</section>  
+</body>
+</html>
