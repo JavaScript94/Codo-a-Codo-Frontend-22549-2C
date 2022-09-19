@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./styles.css">
+
+<style>
+ /*atributo tomar*/
+ [id="idJS"] {
+    color: blue;
+    text-transform:uppercase ;/*lowercase minuscala todo,capitalize primera mayuscula y uppcarse mayuscula*/
+ }
+/*si pongo con adleante * es que contenga"xtexto" */
+ [id*="ss"]{
+    color: yellow    ;
+ }
+
+ /* ^ inicia con "xtexto"*/
+ [id^="html"]{
+    font-style: italic  ;
+ }
+
+ /* $ finaliza con "xtexto"*/
+ [id$="Java"]{
+    text-transform: lowercase;
+}
+
+[atr="atrValor"] {
+    font-size: 35px;
+}
+</style>
+
+</head>
+<body>
+
+    <main>
+        <section class="html" style="background-color:yellowgreen ;" id="htmlid">
+            <h2>HTML</h2>
+            <p>Texto de primer div
+            </p>
+        </section>
+        <section class="css" id="cssID" atr="atrValor">
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus quasi architecto aut deleniti fugit ipsum. Nesciunt cumque ducimus maxime, et error iure sed cum, illo reprehenderit eum aperiam possimus.
+            </p>
+        </section>
+        <section id="idJS">
+            <h4>JS </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus quasi architecto aut deleniti fugit ipsum. Nesciunt cumque ducimus maxime, et error iure sed cum, illo reprehenderit eum aperiam possimus.
+            </p>
+        </section>
+        <section id="idJava">
+            <h4>JAVA </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus quasi architecto aut deleniti fugit ipsum. Nesciunt cumque ducimus maxime, et error iure sed cum, illo reprehenderit eum aperiam possimus.
+            </p>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
