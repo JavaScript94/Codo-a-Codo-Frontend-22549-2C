@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+   /* selector hijo*/ 
+ p > strong{
+    color: red;
+} 
+
+div > img{
+    width: 300px;
+}
+div.div1 p{
+    font-size: 15px;
+}
+
+/*--hermanos adyacentes tag + tag--*/
+h1 + p{
+    font-weight: bolder;
+}
+/*--hermanos general independientemente si esta 1ro2do3ro toma a todos--*/
+h2 ~ p {
+ height: 30px;
+ background-color: aqua;
+
+}
+/*<!--pseudoclase-->*/
+a:visited{
+    color:brown
+}
+a:active{
+    color:turquoise
+}
+h1:hover{
+    font-family: Verdana;
+}
+img:hover{
+    width: 310px;
+    border: 5px solid yellow;
+}
+/*<!--hnos adyacentes o hnos grals + pseudoclase-->*/
+h1 ~ p:hover {
+    font-size: 20px;
+}
+input:checked{
+    margin: 10px;
+}
+/* first child*/
+div.primerHijo {
+    text-align: center;
+    padding-bottom: 25px;
+    }
+div.primerHijo p{
+    display: inline;
+
+}
+div.primerHijo p:first-child{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* last child*/
+div.primerHijo p:last-child{
+    color: rgb(43, 131, 226);
+    font-size: 20px;
+    font-weight: bolder;}
+/* nth*/
+ol li:nth-child(even){
+    color: brown;
+}
+table{
+    border: 1px solid red;
+    border-spacing: 0px;
+    width: 500px;
+    padding: 5px;
+    }
+ table tr{
+    text-align: center;
+    height: 30px;
+}
+table tr:first-child{
+    text-transform: uppercase;
+    background-color: aqua;
+}
+/*tr impares pero a partir de 2da fila tenga otro color */
+table tr:nth-child(2n+3){
+    background-color: brown;
+}
+table tr:nth-child(2n){
+    background-color: yellow;
+}
+table tr:hover{
+   font-size: 1.2em;
+   font-weight: bolder;
+   color: white;
+}
+</style>
+</head>
+<body>
+    <p>
+        selector de hijos <strong>PADRE> HIJO</strong>
+    </p>
+    <p>
+        texto <strong> texto strong</strong> sigue el texto
+    </p>
+    <div class="div1">
+<img src="./scale.jpg">
+<p>parrafo</p>
+<p>parrafo</p>
+</div>
+
+<!--hermanos adyacentes-->
+<div>
+<h1>hermanos adyacentes</h1>
+<p>
+    texto 1
+</p>
+<p>
+    texto 2
+</p>
+<p>
+    texto 3
+</p>
+</div>
+
+<div>
+<h2>hermanos generales</h2>
+<p>
+    hermano 1 de h2
+</p>
+<p>
+    hermano 2 de h2
+</p>
+</div>
+<!--selector atributo en clase 7 index.html-->
+
+<!--pseudoclase-->
+<ul>
+<li>
+    <a href="http://www.google.com.ar">Google</a>
+</li>
+<li>
+    <a href="http://www.facebook.com.ar">Facebook</a>
+</li>
+
+</ul>
+<input type="checkbox">
+<!--1er hijo first child-->
+<div class="primerHijo">
+    <p>
+        p1
+    </p>
+    <p>
+        p2
+    </p>
+    <p>
+        p3
+    </p>
+    <p>
+        p4
+    </p>
+</div>
+<ol>
+    <li>
+        primero
+    </li>
+    <li>
+        segundo
+    </li>
+    <li>
+        tercero
+    </li>
+    <li>
+        cuarto
+    </li>
+    <li>
+        quinto
+    </li>
+    <li>
+        sexto
+    </li>
+</ol>
+
+<table>
+    <tr>
+        <th>
+            col1
+        </th>
+        <th>
+            col2
+        </th>
+    </tr>
+    <tr>
+        <td>
+            f1 col1
+        </td>
+        <td>
+            f1 col2
+        </td>
+    </tr>
+    <tr>
+        <td>
+            f2 col1
+        </td>
+        <td>
+            f2 col2
+        </td>
+        <tr>
+            <td>
+                f3 col1
+            </td>
+            <td>
+                f3 col2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                f4 col1
+            </td>
+            <td>
+                f4 col2
+            </td>
+        </tr>
+    
+    </tr>
+
+</table>
+
+</body>
+</html>
