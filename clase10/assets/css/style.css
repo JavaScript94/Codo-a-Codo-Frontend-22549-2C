@@ -1,0 +1,110 @@
+.container{
+    background-color: aqua;
+    padding: 5px;
+}
+
+.container div{
+display:inline-block ;
+width: 100px;
+height: 100px;
+background-color: beige;
+}
+
+
+/*flex*/
+.container-flex{
+    display:flex;
+    background-color: coral ;
+    padding: 3px;
+    justify-content: center; /*flex star 1ra posicion, flex center centro, flex-end a lo ultimo*/
+/* para cambiar de fila a columnba*/
+    flex-direction: row; /*fila o columna*/
+    width: 100%;
+    height: 250px;
+    flex-wrap:wrap;/*nowrapsi el contenido supera el tamaño containter, se achica/ wrap se justa*/
+    align-items: center;
+
+}
+
+.container-flex div{
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(190, 190, 57);
+    text-align: center;
+}
+.flex-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*media query: sirve para cambiar estilos en determinadas resoluciones*/
+    @media screen and (max-width: 600px) {
+        .container-flex {
+            flex-direction: column;
+        }
+    }
+
+    section{
+        height: 650px;
+        display:flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
+        
+    }
+    .context-text{
+        padding: 5px;
+        margin: 10px;
+    }
+    section img{
+        width: 40%;
+    }
+
+
+/*saco los margenes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /*scrolling*/
+    html {
+        scroll-behavior: smooth;
+    }
+    /*aplico los colores: gradient */
+
+    section:first-child{
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    }
+    section:nth-child(2){
+        background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    }
+    section:nth-child(3){
+        background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    }
+    /* cambio a para ser como un boton*/
+    section a{
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        background-color: teal;
+        color:white;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 25px;
+        }
+    section a:hover {
+        font-weight: bolder;
+        }
+ section a:active {
+            opacity: 0.5;
+            }
+
+@media screen and (max-width: 1000px) {
+    section {
+        flex-direction: column;
+    }
+}
